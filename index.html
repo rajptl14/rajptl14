@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Raj Patel</title>
@@ -40,14 +45,18 @@
 
     background-color: var(--bg);
     color: var(--text);
-   }
+  }
+   h1, h2 {
+    font-family: 'Oleo Script', system-ui, -apple-system, sans-serif;
+    font-weight: 400; /* Use 700 if you want the Bold version */
+  }
    .hero {
-      display: grid;
-      grid-template-columns: 1fr 160px;
-      max-width: 900px;
-      margin: 80px auto;
-      gap: 3rem;
-    }
+    display: grid;
+    grid-template-columns: 1fr 160px;
+    max-width: 900px;
+    margin: 80px auto;
+    gap: 3rem;
+  }
   .hero-meta {
     display: flex; flex-wrap: wrap; gap: 0 1.5rem;
     font-family: var(--mono); font-size: 0.78rem;
@@ -56,9 +65,14 @@
   .hero-photo {
     width: 160px;
     height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--border);
+    flex-shrink: 0;
+    justify-self: end;
+  }
+  .hero-text {
+    min-width: 0;
+  }
+  .hero h1 {
+    white-space: normal; /* allow normal wrapping */
   }
   .hero-meta span strong { color: var(--text); font-weight: 500; }
 
@@ -117,42 +131,49 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-.nav-links {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  font-family: copperplate, 'fantasy';
-}
-.nav-links a {
-    text-decoration: none;
-    color: var(--text);
-
-    font-size: 0.9rem;
-    padding: 8px 12px;
-
-    border-radius: 8px;
-    transition: all 0.2s ease;
-}
- .theme-toggle {
-    background: none;
-    border: 1px solid var(--border2);
-    color: var(--text3);
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    padding: 4px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.15s;
-    display: flex;
-    align-items: center;
-    gap: 0.2rem;
-    letter-spacing: 0.03em;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 1.4rem;
   }
+  .nav-links {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-family: 'Oleo Script', system-ui, -apple-system, sans-serif;
+    font-weight: 400; /* Use 700 if you want the Bold version */
+  }
+  .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+
+      font-size: 0.9rem;
+      padding: 8px 12px;
+
+      border-radius: 8px;
+      transition: all 0.2s ease;
+  }
+  .theme-toggle {
+      background: none;
+      border: 1px solid var(--border2);
+      color: var(--text3);
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      letter-spacing: 0.03em;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 1.4rem;
+    }
+    #typed {
+      display: block;
+      max-width: 100%;
+      overflow-wrap: break-word;
+      white-space: normal;
+    }
   
 </style>
 </head>
@@ -173,7 +194,10 @@
 
   <div class="hero" id="hero">
     <div class="hero-text">
-      <h1>Building systems that <em><span class="accent">uncover</span></em> the patterns hidden within disease.</h1>
+      <h1><span id="typed"></span></h1>
+      <div id="typed-strings">
+        <p>Building systems that <span class="accent"><em>uncover</em></span> the patterns hidden within disease.</p>
+      </div>
       <p class="hero-sub">Hi, I'm Raj! I'm an incoming first-year student at University of Wisconsin–Madison studying Molecular and Cellular Biology.
  
       I'm interested in learning about research, computational biology, and science communication—and how these fields can intersect to advance the human condition.
@@ -183,7 +207,7 @@
       <div class="hero-meta">
         <span><strong>IMSA '26 · UW-Madison Bio '30</strong></span>
         <span>Aurora, IL</span>
-        <span>Python · ML · Forecasting · Graph Systems</span>
+        <span>Python · Wet Lab Research · Molecular Biology · Data Analysis</span>
       </div>
       <div class="hero-links">
         <a href="https://github.com/rajptl14" target="_blank" rel="noopener noreferrer">github</a>
@@ -212,5 +236,19 @@
       }
     });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+  new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 70,
+    backSpeed: 0,
+    loop: false,
+    showCursor: false
+  });
+</script>
+
+
 </body>
 </html>
+
