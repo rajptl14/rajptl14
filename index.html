@@ -64,7 +64,8 @@
   .hero-sub {
     max-width: 600px;
     font-size: 1.2rem;
-    line-height: 1;
+    line-height: 1.25;
+    font-family: 'times new roman', serif;
   }
   .hero-meta {
     display: flex; flex-wrap: wrap; gap: 0 1.5rem;
@@ -76,7 +77,11 @@
     width: 220px;
     height: 220px;
 
-    
+    border-radius: 50%;
+    object-fit: cover;
+
+    display: block;
+    align-self: center;
   }
   .hero-text {
     min-width: 0;
@@ -128,14 +133,7 @@
       background-color: #333;
       transform: translateY(-2px);
   }
-
-  .hero-stats {
-    display: flex;
-    gap: 1.5rem;
-    font-family: 'Instrument Serif', Georgia, serif;
-    font-size: 1.25rem;
-  }
-
+  
   .hero-images {
   display: flex;
   flex-direction: column;
@@ -177,6 +175,7 @@
       border-radius: 8px;
       transition: all 0.2s ease;
   }
+
   .theme-toggle {
       background: none;
       border: 1px solid var(--border2);
@@ -581,7 +580,7 @@
         <a href="#research">Research</a>
         <a href="#contact">Contact</a>
       </div>
-       
+
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
     <span id="theme-icon">☼</span>
     </button>
@@ -632,12 +631,6 @@
       <b><span>Caledonia, IL</span></b>
       <br>
       <span>Python · Wet Lab Research · Web Development · Data Analysis</span>
-    </div>
-
-    <div class="hero-stats">
-      <span>2 Research Labs</span>
-      <span>1 Conference Presentation</span>
-      <span>$750 Raised</span>
     </div>
 
     <div class="hero-links">
@@ -733,7 +726,7 @@ A collection of research projects, independent initiatives, and technical work e
 
 <!-- ================= RESEARCH / PAPERS ================= -->
 <section id="research">
-  <h2 class="section-heading">Publications & Writing</h2>
+  <h2 class="section-heading">Research output</h2>
   <p class="section-intro">
     Papers, posters, and write-ups from research work. </p>
   <div class="research-item">
@@ -742,6 +735,23 @@ A collection of research projects, independent initiatives, and technical work e
       <div class="research-desc">Analyzed data for an unsupervised ML pipeline for identifying structural and functional subgroups in Alzheimer's disease.</div>
     </div>
 
+  <div class="research-item">
+      <div class="research-venue">IMSAloqiuum 2025· First author oral</div>
+      <div class="research-title">Live-Cell Screening of novel Autophagy-Enhancing Derivatives of NU-9 in Alzheimer’s Disease</div>
+      <div class="research-desc">Analyzed data of GPT-0's performance across different page lengths.</div>
+  </div>
+
+  <div class="research-item">
+      <div class="research-venue">ISAAPT 2024· First author oral</div>
+      <div class="research-title">Live-Cell Screening of novel Autophagy-Enhancing Derivatives of NU-9 in Alzheimer’s Disease</div>
+      <div class="research-desc">Conducted assays to evaluate the efficacy of novel autophagy-enhancing derivatives of NU-9 in Alzheimer’s disease.</div>
+  </div>
+
+  <div class="research-item">
+      <div class="research-venue">IMSAloqiuum 2024· First author oral</div>
+      <div class="research-title"></div>
+      <div class="research-desc">Analyzed data of GPT-0's performance across different page lengths.</div>
+    </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
