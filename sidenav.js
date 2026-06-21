@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const indicatorItems = document.querySelectorAll('.section-indicator .indicator-item');
-    const sections = ['home', 'Education', 'projects', 'research', 'contact']
+    const sections = ['home', 'education', 'projects', 'research', 'contact']
         .map(id => document.getElementById(id))
         .filter(Boolean);
 

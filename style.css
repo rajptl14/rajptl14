@@ -64,8 +64,8 @@ body {
   display: flex;
   gap: 5px;
   align-items: center;
-  font-family: 'Noto Serif', serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 .nav-links a {
   text-decoration: none;
@@ -126,12 +126,23 @@ h1 {
   font-size: 3rem;
 }
 
-section {
+.page-content {
   width: 100%;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
   scroll-margin-top: 80px;
+  margin-top: 120px;
+}
+
+section:first-of-type {
+  margin-top: 0;
 }
 
 h2 {
@@ -142,19 +153,17 @@ h2 {
 }
 
 html {
-  scroll-padding-top: 70px; /* adjust to your navbar height */
+  scroll-padding-top: 70px;
 }
 
 #about {
   max-width: 900px;
-  margin: 120px auto; /* keeps it centered */
+  margin: 120px auto;
   padding: 0 20px;
-  text-align: left;   /* keeps text left-aligned */
+  text-align: left;
 }
 
-/* ---------- Home / Hero section ---------- */
 #home {
-  margin-bottom: 5rem;
   padding-top: 5rem;
 }
 
@@ -175,7 +184,6 @@ html {
   font-family: 'Instrument Serif', Georgia, serif;
 }
 
-/* ---------- Scroll to top button ---------- */
 .scroll-to-top {
   position: fixed;
   bottom: 2rem;
@@ -196,7 +204,6 @@ html {
   background-color: #0891b2;
 }
 
-/* ---------- Section headings ---------- */
 .section-heading {
   font-family: 'Instrument Serif', Georgia, serif;
   font-weight: 400;
@@ -217,7 +224,6 @@ html {
   margin-bottom: 2.5rem;
 }
 
-/* ---------- Education ---------- */
 .school {
   background: var(--card);
   border: 1px solid var(--border);
@@ -282,12 +288,6 @@ html {
   margin-bottom: 1rem;
 }
 
-/* ---------- Projects ---------- */
-#projects {
-  max-width: 900px;
-  margin: 120px auto;
-  padding: 0 20px;
-}
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -372,12 +372,6 @@ html {
   margin: 0;
 }
 
-/* ---------- Research / Papers ---------- */
-#research {
-  max-width: 900px;
-  margin: 120px auto;
-  padding: 0 20px;
-}
 .paper-list {
   display: flex;
   flex-direction: column;
@@ -435,11 +429,8 @@ html {
   min-height: 100px;
 }
 
-/* ---------- Contact ---------- */
 #contact {
-  max-width: 900px;
-  margin: 120px auto 160px;
-  padding: 0 20px;
+  margin-bottom: 160px;
 }
 .contact-box {
   background: var(--card);
