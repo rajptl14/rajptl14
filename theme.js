@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     new Typed('#typed', {
         stringsElement: '#typed-strings',
         typeSpeed: 70,
-        backSpeed: 0,
+        backSpeed: 70,
         loop: false,
-        showCursor: true
+        showCursor: false
     });
 
     const toggle = document.getElementById("theme-toggle");

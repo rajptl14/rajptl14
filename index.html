@@ -6,71 +6,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="theme.js"></script>
-  <script src="sidenav.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+  <script src="theme.js" defer></script>
+  <script src="sidenav.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raj Patel</title>
 </head>
 <body>
-    <nav class="navbar">
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#Education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#contact">Contact</a>
-      </div>
-
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#Education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </div>
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-    <span id="theme-icon">☼</span>
+      <span id="theme-icon">☼</span>
     </button>
-    </nav>
+  </nav>
 
-            <button id="scrollToTop" class="fixed bottom-8 right-8 z-50 bg-cyan-500 hover:bg-cyan-600 text-white p-3 rounded-full shadow-lg transition">
-            <i class="bi bi-arrow-up text-xl"></i>
-        </button>
-        <div class="max-w-4xl mx-auto px-6 py-20">
-            <section id="home" class="mb-20">
-                <div class="mb-12">
-                    <pre 
-                        role="img" 
-                        aria-label="Raj Patel" 
-                        class="text-[50px] md:text-base font-mono mb-8"
-                        style="line-height: 1.01; color: #b20909; font-size: 18px; margin-left: -40px;"
-                        > ██████╗  █████╗  ██████╗ 
-██╔══██╗██╔══██╗ ╚════██╗
-██████╔╝███████║      ██║
-██╔══██╗██╔══██║ ██   ██║
-██║  ██║██║  ██║ ╚█████╔╝
-╚═╝  ╚═╝╚═╝  ╚═╝ ╚════╝
-██████╗  █████╗ ████████╗███████╗██╗
-██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██║
-██████╔╝███████║   ██║   █████╗  ██║
-██╔═══╝ ██╔══██║   ██║   ██╔══╝  ██║
-██║     ██║  ██║   ██║   ███████╗███████╗
-                       
-                        </pre>
-                </div>
-                <p class="Subscript" style="margin-left: -40px; line-height: 1.01;">
-                    <b><span><strong>IMSA '26 · UW-Madison Bio '30</strong></span></b>
-                    <b><span>Caledonia, IL</span></b>
-                    <br>
-                    <span>Python · Wet Lab Research · Web Development · Data Analysis</span>
-                </div>
-                </p>
-                <h1 id="typed"></h1>
-                <div id="typed-strings" style="display: none;">
-                  <p>Hi, I'm Raj!</p>
-                </div>
-                <p style="line-height: 15px; margin-left: 520px; margin-right:500px; font-family: 'Instrument Serif', Georgia, serif;">
-                    I'm an incoming first-year student at University of Wisconsin–Madison studying Molecular and Cellular Biology. I'm interested in learning about research, computational biology, and science communication. Specifically, how these fields can intersect to advance the human condition. I'd love to connect. Feel free to reach out at rhpatel6 [at] wisc [dot] edu
-                </p>
-            </section>
-
-
-  <!-- Side section indicator -->
   <div class="section-indicator" id="section-indicator">
     <a href="#home" class="indicator-item" data-section="home">
       <span class="indicator-dot"></span>
@@ -93,156 +49,199 @@
       <span class="indicator-label">Contact</span>
     </a>
   </div>
-<!-- ================= Education ================= -->
-<section id="Education" style="margin-left: 520px;">
-  <h2 class="section-heading">Education</h2>
-</section>
-<div class="school" style="margin-left: 515px; margin-top: 1.25rem; margin-bottom: 1.25rem;">
-  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
-    <div style="display: flex; align-items: center; gap: 0.75rem;">
-      <img src="UWLogo.jpeg" alt="UW Madison" style="width: 52px; height: 52px; object-fit: contain; border-radius: 50%; flex-shrink: 0;">
-      <div>
-        <h3 style="margin: 0;">University of Wisconsin-Madison</h3>
-        <p class="project-eyebrow" style="margin: 0;">Madison, Wisconsin • Sept 2026 - Jun 2030</p>
-      </div>
+
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <section id="home">
+    <div class="ascii-wrap">
+      <pre role="img" aria-label="Raj Patel" class="ascii-art">
+          ██████╗  █████╗  ██████╗ 
+          ██╔══██╗██╔══██╗ ╚════██╗
+          ██████╔╝███████║      ██║
+          ██╔══██╗██╔══██║ ██   ██║
+          ██║  ██║██║  ██║ ╚█████╔╝
+          ╚═╝  ╚═╝╚═╝  ╚═╝ ╚════╝
+          ██████╗  █████╗ ████████╗███████╗██╗
+          ██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██║
+          ██████╔╝███████║   ██║   █████╗  ██║
+          ██╔═══╝ ██╔══██║   ██║   ██╔══╝  ██║
+          ██║     ██║  ██║   ██║   ███████╗███████╗
+      </pre>
     </div>
-    <span style="background: #eaf3e8; color: #2e7d32; font-family: var(--mono); font-size: 0.75rem; font-weight: 600; padding: 6px 14px; border-radius: 8px; white-space: nowrap;">B.S. Molecular & Cellular Biology</span>
-  </div>
-  <p style="font-family: 'Instrument Serif', Georgia, serif; margin-bottom: 0.75rem;">Selective public flagship university. Multi-billion dollar research enterprise dedicated to real-world impact and public service.</p>
-  <div class="project-tags">
-    <span style="background: #b20909; color: #fff;">Coursework in progress</span>
-  </div>
-</div>
 
-<div class="school" style="margin-left: 515px; margin-bottom: 1.25rem;">
-  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
-    <div style="display: flex; align-items: center; gap: 0.75rem;">
-      <img src="imsalogo.jpeg" alt="IMSA" style="width: 52px; height: 52px; object-fit: contain; border-radius: 50%; flex-shrink: 0;">
-      <div>
-        <h3 style="margin: 0;">Illinois Mathematics and Science Academy</h3>
-        <p class="project-eyebrow" style="margin: 0;">Aurora, Illinois • Aug 2023 - Jun 2026</p>
-      </div>
+    <p class="Subscript">
+      <b><span><strong>IMSA '26 · UW-Madison Bio '30</strong></span></b>
+      <b><span>Caledonia, IL</span></b>
+      <br>
+      <span>Python · Wet Lab Research · Web Development · Data Analysis</span>
+    </p>
+
+    <h1 id="typed"></h1>
+    <div id="typed-strings" style="display: none;">
+      <p>Hi, I'm Raj!</p>
     </div>
-  </div>
-  <p style="font-family: 'Instrument Serif', Georgia, serif; margin-bottom: 0.75rem;">Selective residential public high school. Rigorous STEM coursework with emphasis on research and inquiry.</p>
-  <div class="project-tags" style="margin-bottom: 1rem;">
-    <span style="background: #b20909; color: #fff;">Organic Chemistry</span>
-    <span style="background: #b20909; color: #fff;">Advanced Chemistry</span>
-    <span style="background: #b20909; color: #fff;">Calculus BC Sequence</span>
-    <span style="background: #b20909; color: #fff;">Biochemistry</span>
-    <span style="background: #b20909; color: #fff;">Differential Equations</span>
-  </div>
-</div>
-<!-- ================= PROJECTS ================= -->
-<section id="projects">
-  <h2 class="section-heading">Selected Work</h2>
-  <p class="section-intro">
-A collection of research projects, independent initiatives, and technical work exploring biology, medicine, and artificial intelligence.  </p>
 
-  <div class="project-grid">
+    <p class="home-intro">
+      I'm an incoming first-year student at University of Wisconsin–Madison studying Molecular and Cellular Biology. I'm interested in learning about research, computational biology, and science communication. Specifically, how these fields can intersect to advance the human condition. I'd love to connect. Feel free to reach out at rhpatel6@wisc.edu
+    </p>
+  </section>
 
-    <!-- Project card 1 -->
-    <div class="project-card">
-      <h3>AIthena Research Group</h3>
-      <p class="project-eyebrow">independent lab · peer reviewed output</p>
-      <p>Co-founded an independent AI research group producing work in machine learning, computational neuroscience, and AI reasoning without university affiliation.</p>
+  <section id="Education">
+    <h2 class="section-heading">Education</h2>
+
+    <div class="school school-first">
+      <div class="school-header">
+        <div class="school-header-left">
+          <img src="UWLogo.jpeg" alt="UW Madison" class="school-logo">
+          <div>
+            <h3 class="school-name">University of Wisconsin-Madison</h3>
+            <p class="project-eyebrow school-meta">Madison, Wisconsin • Sept 2026 - Jun 2030</p>
+          </div>
+        </div>
+        <span class="degree-badge">B.S. Molecular & Cellular Biology</span>
+      </div>
+      <p class="school-desc">Selective public flagship university. Multi-billion dollar research enterprise dedicated to real-world impact and public service.</p>
       <div class="project-tags">
-        <span>AI Evaluation</span>
-        <span>Research</span>
+        <span class="tag-status">Coursework in progress</span>
       </div>
     </div>
 
-    <!-- Project card 2 -->
-    <div class="project-card">
-      <h3>Alzheimer's Research</h3>
-      <p class="project-eyebrow">Klein Lab · Northwestern</p>
-      <p>One year under the guidance of Dr. Raghd Norwar, conducting quantitative assays to detect signal changes due to a drug called NU-9.</p>
-      <div class="project-tags">
-        <span>Research</span>
+    <div class="school school-last">
+      <div class="school-header">
+        <div class="school-header-left">
+          <img src="imsalogo.jpeg" alt="IMSA" class="school-logo">
+          <div>
+            <h3 class="school-name">Illinois Mathematics and Science Academy</h3>
+            <p class="project-eyebrow school-meta">Aurora, Illinois • Aug 2023 - Jun 2026</p>
+          </div>
+        </div>
+      </div>
+      <p class="school-desc">Selective residential public high school. Rigorous STEM coursework with emphasis on research and inquiry.</p>
+      <div class="project-tags project-tags-spaced">
+        <span class="tag-status">Organic Chemistry</span>
+        <span class="tag-status">Advanced Chemistry</span>
+        <span class="tag-status">Calculus BC Sequence</span>
+        <span class="tag-status">Biochemistry</span>
+        <span class="tag-status">Differential Equations</span>
       </div>
     </div>
+  </section>
 
-    <!-- Project card 3 -->
-    <div class="project-card">
-      <h3>AURA Awareness</h3>
-      <p class="project-eyebrow">Nonprofit · Community Impact · $750 raised</p>
-      <p>Co-founded a nonprofit organization dedicated to supporting early breast cancer detection and awareness through fundraising and educational initiatives.</p>
-      <div class="project-tags">
-        <span>Initative</span>
-        <span>Outreach</span>
-        <span>Management</span>
+  <section id="projects">
+    <h2 class="section-heading">Selected Work</h2>
+    <p class="section-intro">
+      A collection of research projects, independent initiatives, and technical work exploring biology, medicine, and artificial intelligence.
+    </p>
+
+    <div class="project-grid">
+
+      <!-- Project card 1 -->
+      <div class="project-card">
+        <h3>AIthena Research Group</h3>
+        <p class="project-eyebrow">independent lab · peer reviewed output</p>
+        <p>Co-founded an independent AI research group producing work in machine learning, computational neuroscience, and AI reasoning without university affiliation.</p>
+        <div class="project-tags">
+          <span>AI Evaluation</span>
+          <span>Research</span>
+        </div>
       </div>
-      <div class="project-links">
-        <a href="https://www.gofundme.com/f/auras-mission-detect-cancer-early" target="_blank">GoFundMe</a>
+
+      <!-- Project card 2 -->
+      <div class="project-card">
+        <h3>Alzheimer's Research</h3>
+        <p class="project-eyebrow">Klein Lab · Northwestern</p>
+        <p>One year under the guidance of Dr. Raghd Norwar, conducting quantitative assays to detect signal changes due to a drug called NU-9.</p>
+        <div class="project-tags">
+          <span>Research</span>
+        </div>
       </div>
+
+      <!-- Project card 3 -->
+      <div class="project-card">
+        <h3>AURA Awareness</h3>
+        <p class="project-eyebrow">Nonprofit · Community Impact · $750 raised</p>
+        <p>Co-founded a nonprofit organization dedicated to supporting early breast cancer detection and awareness through fundraising and educational initiatives.</p>
+        <div class="project-tags">
+          <span>Initative</span>
+          <span>Outreach</span>
+          <span>Management</span>
+        </div>
+        <div class="project-links">
+          <a href="https://www.gofundme.com/f/auras-mission-detect-cancer-early" target="_blank">GoFundMe</a>
+        </div>
+      </div>
+
+      <!-- Project card 4 -->
+      <div class="project-card">
+        <h3>Triple Negative Breast Cancer Research</h3>
+        <p class="project-eyebrow">Minshall Lab · University of Illinois Chicago</p>
+        <p>One year under the guidance of Dr. Richard D. Minshall, conducting trans-endothelial electrical resistance tests or Bradford assays to test NS1643's impact on cell junctions.</p>
+        <div class="project-tags">
+          <span>Research</span>
+        </div>
+      </div>
+
+      <!-- Project card 5 -->
+      <div class="project-card">
+        <h3>Assessing AI and Page Length Research</h3>
+        <p class="project-eyebrow">Remote · Rockford University</p>
+        <p>Investigated how page length relates to false positives in GPT-0, discovering GPT-0 flagged our human essays. I presented to an audience of 25 at the ISAAPT conference.</p>
+        <div class="project-tags">
+          <span>AI Evaluation</span>
+          <span>Research</span>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-    <!-- 4th project -->
-    <div class="project-card">
-      <h3>Triple Negative Breast Cancer Research</h3>
-      <p class="project-eyebrow"> Minshall Lab · University of Illinois Chicago</p>
-      <p> One year under the guidance of Dr. Richard D. Minshall, conducting trans-endothelial electrical resistance tests or Bradford assays to test NS1643's impact on cell junctions. </p>
-      <div class="project-tags">
-        <span>Research</span>
-      </div>
-    </div>
+  <!-- ================= RESEARCH / PAPERS ================= -->
+  <section id="research">
+    <h2 class="section-heading">Research output</h2>
+    <p class="section-intro">
+      Papers, posters, and write-ups from research work.
+    </p>
 
-    <!-- 5th project -->
-    <div class="project-card">
-      <h3>Assessing AI and Page Length Research</h3>
-      <p class="project-eyebrow"> Remote · Rockford University</p>
-      <p> Investigated how page length relates to false positives in GPT-0, discovering GPT-0 flagged our human essays. I presented to an audience of 25 at the ISAAPT conference </p>
-      <div class="project-tags">
-        <span>AI Evaluation</span>
-        <span>Research</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= RESEARCH / PAPERS ================= -->
-<section id="research">
-  <h2 class="section-heading">Research output</h2>
-  <p class="section-intro">
-    Papers, posters, and write-ups from research work. </p>
-  <div class="research-item">
+    <div class="research-item">
       <div class="research-venue">CVPR acceptance 2026 · First author</div>
       <div class="research-title">Multimodal discovery of hidden Alzheimer's disease subtypes from MRI data.</div>
       <div class="research-desc">Analyzed data for an unsupervised ML pipeline for identifying structural and functional subgroups in Alzheimer's disease.</div>
     </div>
 
-  <div class="research-item">
-      <div class="research-venue">IMSAloqiuum 2025· First author oral</div>
-      <div class="research-title">Live-Cell Screening of novel Autophagy-Enhancing Derivatives of NU-9 in Alzheimer’s Disease</div>
+    <div class="research-item">
+      <div class="research-venue">IMSAloqiuum 2025 · First author oral</div>
+      <div class="research-title">Live-Cell Screening of novel Autophagy-Enhancing Derivatives of NU-9 in Alzheimer's Disease</div>
       <div class="research-desc">Analyzed data of GPT-0's performance across different page lengths.</div>
-  </div>
+    </div>
 
-  <div class="research-item">
-      <div class="research-venue">ISAAPT 2024· First author oral</div>
-      <div class="research-title">Assessing page length in corespondence to GPT-Zero's False Positives</div>
+    <div class="research-item">
+      <div class="research-venue">ISAAPT 2024 · First author oral</div>
+      <div class="research-title">Assessing page length in correspondence to GPT-Zero's False Positives</div>
       <div class="research-desc">Analyzed data of GPT-0's performance across different page lengths.</div>
-  </div>
+    </div>
 
-  <div class="research-item">
-      <div class="research-venue">IMSAloqiuum 2024· First author oral</div>
+    <div class="research-item">
+      <div class="research-venue">IMSAloqiuum 2024 · First author oral</div>
       <div class="research-title">Effects of KV11.1 on Desmosomal Proteins: Desmoplakin and Plakophilin</div>
       <div class="research-desc">Conducted assays to evaluate the efficacy of NS1643 on Triple Negative Breast Cancer Disease.</div>
     </div>
-</section>
+  </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-  <div class="contact-box">
-    <h2>Get in Touch</h2>
-    <p>
-      Whether it's research, collaboration, or just a conversation about science and code...my inbox is open.
-    </p>
-    <div class="contact-links">
-      <a href="https://github.com/rajptl14" target="_blank">github</a>
-      <a href="https://www.linkedin.com/in/raj-patel-115321330" target="_blank">linkedin</a>
-      <a href="mailto:rajptl2026@gmail.com">email</a>
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="contact-box">
+      <h2>Get in Touch</h2>
+      <p>
+        Whether it's research, collaboration, or just a conversation about science and code...my inbox is open.
+      </p>
+      <div class="contact-links">
+        <a href="https://github.com/rajptl14" target="_blank">github</a>
+        <a href="https://www.linkedin.com/in/raj-patel-115321330" target="_blank">linkedin</a>
+        <a href="mailto:rajptl2026@gmail.com">email</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 </body>
 </html>
